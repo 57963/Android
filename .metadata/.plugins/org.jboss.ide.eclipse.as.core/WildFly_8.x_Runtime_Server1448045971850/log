@@ -1,0 +1,88 @@
+!SESSION 2015-11-20 18:58:34.627 -----------------------------------------------
+eclipse.buildId=4.3.2.M20140221-1700
+java.version=1.8.0_25
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_GB
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-11-20 18:59:48.069
+!MESSAGE Module Quiz published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2015-11-20 18:59:48.239
+!MESSAGE The server "WildFly 8.x Runtime Server" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_25 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-11-20 18:59:49.912
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-11-20 19:00:01.148
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-11-20 19:11:19.039
+!MESSAGE 2 files modified in module Quiz
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2015-11-20 19:11:27.875
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2015-11-20 19:11:28.948
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2015-11-20 19:11:40.713
+!MESSAGE The server "WildFly 8.x Runtime Server" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_25 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-11-20 19:11:41.633
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-11-20 19:11:53.351
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-11-20 19:11:54.435
+!MESSAGE 1 files modified in module Quiz
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-11-20 19:12:22.595
+!MESSAGE 2 files modified in module Quiz
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2015-11-20 19:27:12.472
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2015-11-20 19:27:13.379
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2015-11-20 19:27:13.398
+!MESSAGE The server "WildFly 8.x Runtime Server" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_25 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2015-11-20 19:27:14.288
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2015-11-20 19:27:25.499
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-11-20 19:27:40.838
+!MESSAGE 1 files modified in module Quiz
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-11-20 21:54:41.095
+!MESSAGE 1 files modified in module Quiz
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-11-20 22:01:02.411
+!MESSAGE 1 files modified in module Quiz
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-11-20 22:18:07.865
+!MESSAGE 1 files modified in module Quiz
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-11-20 22:20:03.782
+!MESSAGE 1 files modified in module Quiz
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-11-20 22:20:27.598
+!MESSAGE 1 files modified in module Quiz
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-11-20 22:33:12.241
+!MESSAGE 1 files modified in module Quiz
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-11-20 22:34:55.895
+!MESSAGE 1 files modified in module Quiz
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-11-20 22:35:39.388
+!MESSAGE 1 files modified in module Quiz
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2015-11-20 22:35:56.388
+!MESSAGE 1 files modified in module Quiz

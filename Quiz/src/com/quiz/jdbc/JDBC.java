@@ -12,14 +12,41 @@ import java.util.ArrayList;
  	static ResultSet result;
     public static void main(String[] args) throws SQLException {
     	setup();
-    	setRecord(1,"ollie","pass1");
-    	System.out.print(getColumnArray("username"));
+    	clearTable();
+    	createRecord("callum","callumPass");
+    	createRecord("ollie","olliePass");
+    	createRecord("lalin","lalinPass");
+    	printTable();
     	conn.close();
     }
     
     public static void setup() throws SQLException{
     	conn = DriverManager.getConnection(dbURL, user, pass);
     	stat = conn.createStatement();
+    }
+    
+    public static void printTable() throws SQLException{
+    	result = stat.executeQuery("select * from userstore");
+    	while(result.next()){
+    		for(int i = 1; i<result.getMetaData().getColumnCount()+1;i++){
+    			System.out.print(result.getString(i));
+    			System.out.print("    ");
+    		}
+    		System.out.println();
+    	}
+    }
+    
+    public static void clearTable() throws SQLException{
+    	stat.execute("delete from userstore");
+    	stat.execute("alter sequence user_id_seq restart with 1");
+    }
+    
+    public static void deleteRecord(int id) throws SQLException{
+    	stat.execute("delete from userstore where id="+id);
+    }
+    
+    public static void createRecord(String username, String password) throws SQLException{
+    	stat.execute("insert into userstore "+"values('"+username+"', '"+password+"')");
     }
     
     public static void setRecord(int id, String username, String password) throws SQLException{
