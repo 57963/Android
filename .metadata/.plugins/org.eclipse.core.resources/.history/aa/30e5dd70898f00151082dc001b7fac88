@@ -1,0 +1,19 @@
+package com.quiz.jdbc;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Properties;
+public class JDBC {
+	static String url = "jdbc:postgresql://localhost:5432/Quiz";
+	public static void main(String[]args) {
+		Connection conn2 = null;
+		String dbURL2 = "jdbc:postgresql://localhost/ProductDB2";
+		String user = "root";
+		String pass = "secret";
+
+		conn2 = DriverManager.getConnection(dbURL2, user, pass);
+		if (conn2 != null) {
+			System.out.println("Connected to database #2");
+		}
+	}
+}

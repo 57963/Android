@@ -1,0 +1,10 @@
+package com.quiz.jdbc;
+import java.sql.*;
+public class JDBC {
+	static String url = "jdbc:postgresql://localhost:5432/Quiz";
+	public static void main(String[]args) throws ClassNotFoundException{
+		Class.forName("org.postgresql.Driver");
+		//Connection database = DriverManager.getConnection(url, "postgres", "root");
+		//database.close();
+	}
+}

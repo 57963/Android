@@ -1,0 +1,9 @@
+package com.quiz.jdbc;
+import java.sql.*;
+public class JDBC {
+	String url = 
+	Connection database = 
+	public static void main(String[]args){
+		Class.forName("org.postgresql.Driver");
+	}
+}

@@ -1,0 +1,32 @@
+package com.quiz.jdbc;
+ 
+import java.sql.*;
+import java.util.ArrayList;
+
+ public class JDBC {
+	static Connection conn = null;
+ 	static String dbURL = "jdbc:postgresql://localhost:5432/Quiz";
+ 	static String user = "postgres";
+ 	static String pass = "root";
+ 	static Statement stat;
+ 	static ResultSet result;
+    public static void main(String[] args) throws SQLException {
+    	setup();
+    	System.out.print(getColumnArray("username"));
+    	conn.close();
+    }
+    
+    public static void setup() throws SQLException{
+    	conn = DriverManager.getConnection(dbURL, user, pass);
+    	stat = conn.createStatement();
+    }
+ 
+    public static ArrayList <String> getColumnArray(String columnName) throws SQLException{
+    	ArrayList <String> out = new ArrayList <String>();
+    	result = stat.executeQuery("select "+columnName+" from userstore");
+    	while(result.next()){
+    		out.add(result.getString(1));
+    	}
+		return out;
+    }
+ }

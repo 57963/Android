@@ -1,0 +1,26 @@
+package com.quiz.jdbc;
+ 
+import java.sql.*;
+
+ public class JDBC {
+	static Connection conn = null;
+ 	static String dbURL = "jdbc:postgresql://localhost:5432/Quiz";
+ 	static String user = "postgres";
+ 	static String pass = "root";
+ 	static Statement stat;
+ 	static ResultSet result;
+    public static void main(String[] args) throws SQLException {
+    	conn = DriverManager.getConnection(dbURL, user, pass);
+    	stat = conn.createStatement();
+    	result = stat.executeQuery("select * from userstore");
+    	System.out.print(Integer.parseInt(stat.executeQuery("select len(username) from userstore").toString()));
+    	conn.close();
+     }
+ 
+    public String[] getUsernameArray() throws SQLException{
+    	String[] username = new String[Integer.parseInt(stat.executeQuery("select len(username) from userstore").toString())];
+    	result = stat.executeQuery("select username from userstore");
+		return username;
+    	
+    }
+ }

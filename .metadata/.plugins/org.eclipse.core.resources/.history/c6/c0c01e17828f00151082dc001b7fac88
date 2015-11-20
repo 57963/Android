@@ -1,0 +1,17 @@
+/*package com.quiz.entity;
+import java.io.Serializable;
+
+import javax.persistence.*;
+@SuppressWarnings("serial")
+@Entity
+@Table(name="user")
+public class TestEntity implements Serializable{
+	Long id;
+	@Id
+	public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+    
+    @Basic
+    
+}
+*/

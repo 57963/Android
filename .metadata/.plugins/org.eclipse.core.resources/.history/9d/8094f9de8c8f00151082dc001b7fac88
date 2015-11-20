@@ -1,0 +1,22 @@
+package com.quiz.jdbc;
+ 
+import java.sql.*;
+
+ public class JDBC {
+ 
+    public static void main(String[] args) throws SQLException {
+    	Connection conn = null;
+    	String dbURL = "jdbc:postgresql://localhost:5432/Quiz";
+    	String user = "postgres";
+    	String pass = "root";
+    	conn = DriverManager.getConnection(dbURL, user, pass);
+    	System.out.print(conn!=null);
+    	Statement stat = conn.createStatement();
+    	ResultSet result = stat.executeQuery("select * from user");
+    	while(result.next()){
+    		System.out.print(result.getString("user_id_seq"));
+    	}
+    	conn.close();
+     }
+ 
+ }
