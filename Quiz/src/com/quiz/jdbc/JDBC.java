@@ -12,7 +12,7 @@ import java.util.ArrayList;
  	static ResultSet result;
     public static void main(String[] args) throws SQLException {
     	setup();
-    	setRecord(1,"Rec1","pass1");
+    	setRecord(1,"ollie","pass1");
     	System.out.print(getColumnArray("username"));
     	conn.close();
     }
