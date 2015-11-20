@@ -12,7 +12,6 @@ import java.util.ArrayList;
  	static ResultSet result;
     public static void main(String[] args) throws SQLException {
     	setup();
-    	setRecord(1,"Rec1","pass1");
     	System.out.print(getColumnArray("username"));
     	conn.close();
     }
@@ -20,15 +19,6 @@ import java.util.ArrayList;
     public static void setup() throws SQLException{
     	conn = DriverManager.getConnection(dbURL, user, pass);
     	stat = conn.createStatement();
-    }
-    
-    public static void setRecord(int id, String username, String password) throws SQLException{
-    	if(username != ""){
-    		stat.executeUpdate("update userstore set username='"+username+"' where id='"+id+"'");
-        }
-    	if(password != ""){
-    		stat.executeUpdate("update userstore set password='"+password+"' where id='"+id+"'");
-        }
     }
  
     public static ArrayList <String> getColumnArray(String columnName) throws SQLException{

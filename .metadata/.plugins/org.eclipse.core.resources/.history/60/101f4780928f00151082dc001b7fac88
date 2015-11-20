@@ -12,7 +12,7 @@ import java.util.ArrayList;
  	static ResultSet result;
     public static void main(String[] args) throws SQLException {
     	setup();
-    	setRecord(1,"Rec1","pass1");
+    	setRecord();
     	System.out.print(getColumnArray("username"));
     	conn.close();
     }
@@ -22,13 +22,8 @@ import java.util.ArrayList;
     	stat = conn.createStatement();
     }
     
-    public static void setRecord(int id, String username, String password) throws SQLException{
-    	if(username != ""){
-    		stat.executeUpdate("update userstore set username='"+username+"' where id='"+id+"'");
-        }
-    	if(password != ""){
-    		stat.executeUpdate("update userstore set password='"+password+"' where id='"+id+"'");
-        }
+    public void setRecord() throws SQLException{
+    	stat.executeUpdate("update userstore set username='pepe' where id='2'");
     }
  
     public static ArrayList <String> getColumnArray(String columnName) throws SQLException{
