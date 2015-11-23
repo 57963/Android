@@ -1,0 +1,19 @@
+package com.quiz.jdbc;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
+public class UserList {
+	public List<User> getUsers() throws SQLException{
+		List<User> output = new ArrayList<User>();
+		Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Quiz", "postgres", "root");
+    	Statement stat = conn.createStatement();
+    	ResultSet res = stat.executeQuery("select * from userdata");
+    	while(res.next()){
+    		User user = new User();
+    	}
+		return output;
+	}
+	
+}

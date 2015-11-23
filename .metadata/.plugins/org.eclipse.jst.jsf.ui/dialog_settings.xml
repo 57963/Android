@@ -4,10 +4,10 @@
 		<item value="javax.faces.webapp.FacesServlet" key="servletClassname"/>
 		<item value="true" key="configureServlet"/>
 		<item value="/WEB-INF/faces-config.xml" key="configPath"/>
-		<item value="Faces Servlet" key="servletName"/>
+		<item value="faceServlet" key="servletName"/>
 		<section name="urlMappings">
 			<list key="pattern">
-				<item value="/faces/*"/>
+				<item value="*.xhtml"/>
 			</list>
 		</section>
 	</section>
